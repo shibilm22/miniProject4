@@ -13,7 +13,7 @@ class Main {
 
     int age = getAge(birthYear, currentyear);
 
-    if (attendParty(age)) {
+    if (gotThejob(age)) {
       System.out.println("Yay! You got the job!");
 
     } else {
@@ -30,13 +30,13 @@ class Main {
 
   // method returns greeting
   static String greeting(String name) {
-    String hello = "hello, welcome back. " + name;
+    String hello = "hello, nice to meet you! " + name;
     return hello;
   }
 
   // create a method that takes in at least 1 parameter and returns some type
   // call this new method within your main method
-  static boolean attendParty(int age) {
+  static boolean gotTheJob(int age) {
     if (age >= 16) {
       return true;
     } else {
