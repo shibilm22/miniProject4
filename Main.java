@@ -10,7 +10,6 @@ class Main {
     int currentyear = scan.nextInt();
     System.out.println("what is your birth year?");
     int birthYear = scan.nextInt();
-
     int age = getAge(birthYear, currentyear);
 
     if (gotTheJob(age)) {
@@ -35,8 +34,8 @@ class Main {
   }
 
   static boolean gotTheJob(int age) {
-  // create a method that takes in at least 1 parameter and returns some type
-  // call this new method within your main method
+    // create a method that takes in at least 1 parameter and returns some type
+    // call this new method within your main method
     if (age >= 16) {
       return true;
     } else {
