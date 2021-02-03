@@ -11,7 +11,7 @@ class Main {
     System.out.println("what is your birth year?");
     int birthYear = scan.nextInt();
     int age = getAge(birthYear, currentyear);
-    System.out.println("how many years of experience do you have?");
+    System.out.println("how many years of experience do you have?"):
     int yearsOfExperience = scan.nextInt();
     if (becameRapManager(age, yearsOfExperience)) {
       System.out.println("Yay! You are qualified to be a music manager!");
@@ -45,5 +45,5 @@ class Main {
     }
   }
 
-  
+
 }
