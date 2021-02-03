@@ -37,7 +37,7 @@ class Main {
     // create a method that takes in at least 1 parameter and returns some type
     // call this new method within your main method
     //possibly change method name 
-    if (age >= 16) {
+    if (age >= 20) {
       return true;
     } else {
       return false;
