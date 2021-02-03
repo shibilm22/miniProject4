@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-
+    int totalJobs = 0;
     System.out.println("what is your name?");
     String name = scan.next();
     System.out.println("what year is it?");
@@ -11,10 +11,11 @@ class Main {
     System.out.println("what is your birth year?");
     int birthYear = scan.nextInt();
     int age = getAge(birthYear, currentyear);
-    System.out.println("how many years of experience do you have?"):
+    System.out.println("how many years of experience do you have?");
     int yearsOfExperience = scan.nextInt();
     if (becameRapManager(age, yearsOfExperience)) {
       System.out.println("Yay! You are qualified to be a music manager!");
+      totalJobs = jobsAvailable(totalJobs); 
 
     } else {
       System.out.println("Maybe next year you will be able to get the spot!");
@@ -45,5 +46,10 @@ class Main {
     }
   }
 
+  static int jobsAvailable(int totalJobs) {
+    totalJobs = totalJobs + 3;
+    return jobsAvailable;
+
+  }
 
 }
