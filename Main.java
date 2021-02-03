@@ -11,12 +11,13 @@ class Main {
     System.out.println("what is your birth year?");
     int birthYear = scan.nextInt();
     int age = getAge(birthYear, currentyear);
-
-    if (gotTheJob(age)) {
+    System.out.println("how many years of experience do you have?");
+    int yearsOfExperience = scan.nextInt();
+    if (becameRapManager(age, yearsOfExperience)) {
       System.out.println("Yay! You are qualified to be a music manager!");
 
     } else {
-      System.out.println("Maybe next year you will be able to get the job!");
+      System.out.println("Maybe next year you will be able to get the spot!");
 
     }
   }
@@ -33,14 +34,16 @@ class Main {
     return hello;
   }
 
-  static boolean gotTheJob(int age) {
+  static boolean becameRapManager(int age, int experience) {
     // create a method that takes in at least 1 parameter and returns some type
     // call this new method within your main method
-    //possibly change method name 
-    if (experience >=3 ; age > 20) {
+    // possibly change method name
+    if (experience >= 3 && age > 20) {
       return true;
     } else {
       return false;
     }
   }
+
+  
 }
