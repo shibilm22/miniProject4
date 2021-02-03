@@ -13,7 +13,7 @@ class Main {
     int age = getAge(birthYear, currentyear);
 
     if (gotTheJob(age)) {
-      System.out.println("Yay! You got the job!");
+      System.out.println("Yay! You are qualified to be a music manager!");
 
     } else {
       System.out.println("Maybe next year you will be able to get the job!");
@@ -37,7 +37,7 @@ class Main {
     // create a method that takes in at least 1 parameter and returns some type
     // call this new method within your main method
     //possibly change method name 
-    if (age >= 20) {
+    if (experience >=3 ; age > 20) {
       return true;
     } else {
       return false;
