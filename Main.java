@@ -3,7 +3,8 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    int totalJobs = 0;
+    int totalJobs = 3;
+    System.out.println("jobs available = " + totalJobs);
     System.out.println("what is your name?");
     String name = scan.next();
     System.out.println("what year is it?");
@@ -15,7 +16,8 @@ class Main {
     int yearsOfExperience = scan.nextInt();
     if (becameRapManager(age, yearsOfExperience)) {
       System.out.println("Yay! You are qualified to be a music manager!");
-      totalJobs = jobsAvailable(totalJobs); 
+      totalJobs = jobsAvailable(totalJobs);
+      System.out.println("jobs available = " + totalJobs);
 
     } else {
       System.out.println("Maybe next year you will be able to get the spot!");
@@ -47,8 +49,8 @@ class Main {
   }
 
   static int jobsAvailable(int totalJobs) {
-    totalJobs = totalJobs + 3;
-    return jobsAvailable;
+    totalJobs = totalJobs - 1;
+    return totalJobs;
 
   }
 
