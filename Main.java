@@ -4,7 +4,9 @@ class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     int totalJobs = 3;
+    //starting with three jobs 
     System.out.println("jobs available = " + totalJobs);
+    //depending if you got the job or not it will either stay as 3 or subtract a 1 if you got the job
     System.out.println("what is your name?");
     String name = scan.next();
     System.out.println("what year is it?");
@@ -38,19 +40,21 @@ class Main {
   }
 
   static boolean becameRapManager(int age, int experience) {
-    // create a method that takes in at least 1 parameter and returns some type
     // call this new method within your main method
-    // possibly change method name
-    if (experience >= 3 && age > 20) {
+    if (experience >= 3 && age >= 20) {
+      //you must have experience of 3 or more years and must be greater than or equal to 20 for age. 
       return true;
+      //will return true if user passes the requierments
     } else {
       return false;
+      //will return false if user does not pass the requierment
     }
   }
 
   static int jobsAvailable(int totalJobs) {
     totalJobs = totalJobs - 1;
     return totalJobs;
+    //return the totalJobs depending if you got the job or not
 
   }
 
