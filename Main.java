@@ -39,7 +39,7 @@ class Main {
     //this formula will calculate the age of the user.
     return age;
   }
-
+  //method will allow you to find out if you got the job.
   static boolean becameRapManager(int age, int experience) {
     // call this new method within your main method
     if (experience >= 3 && age >= 20) {
@@ -51,7 +51,7 @@ class Main {
       //will return false if user does not pass the requierment
     }
   }
-
+  //method will calculate the totalJobs
   static int jobsAvailable(int totalJobs) {
     totalJobs = totalJobs - 1;
     return totalJobs;
